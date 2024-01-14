@@ -17,7 +17,6 @@ public class TemperatureMeasurementsListener implements Function<KStream<String,
 
     @Override
     public KStream<String, Anomaly> apply(KStream<String, TemperatureReading> events) {
-        //TODO adapt to Recruitment Task requirements
         return events
                 .mapValues((temperatureReading) -> anomalyDetector.apply(List.of(temperatureReading)))
                 .filter((s, anomaly) -> anomaly.isPresent())

@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Component
-public class AlwaysAnomalyAnomalyDetector implements AnomalyDetector {
+class AlwaysAnomalyAnomalyDetector implements AnomalyDetector {
     @Override
     public Optional<Anomaly> apply(List<TemperatureReading> temperatureReadings) {
 
