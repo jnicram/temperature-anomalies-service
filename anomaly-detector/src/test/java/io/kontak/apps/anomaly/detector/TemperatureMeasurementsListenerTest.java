@@ -1,12 +1,11 @@
-package io.kontakt.apps.anomaly.detector;
+package io.kontak.apps.anomaly.detector;
 
 import io.kontak.apps.event.Anomaly;
 import io.kontak.apps.event.TemperatureReading;
-import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Value;
-
 import java.time.Duration;
 import java.time.Instant;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Value;
 
 public class TemperatureMeasurementsListenerTest extends AbstractIntegrationTest {
 

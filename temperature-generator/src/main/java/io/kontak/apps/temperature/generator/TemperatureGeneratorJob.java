@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 import java.util.concurrent.TimeUnit;
 
 @Component
-public class TemperatureGeneratorJob {
+class TemperatureGeneratorJob {
 
     private final TemperatureGenerator generator;
     private final TemperatureStreamPublisher publisher;
